@@ -75,12 +75,14 @@ a:hover {
   ---------------------
   --------------------- */
 
+
 .menuItem {
     display: block;
     margin: 2rem 4rem;
     font-size: 1.8rem;
     color: white;
     text-decoration: none;
+    z-index: 100;
 }
 
 .menuItem:hover {
@@ -90,7 +92,7 @@ a:hover {
 .hamburger {
     position: fixed;
     z-index: 100;
-    top: 1rem;
+    top: 0.7rem;
     right: 1rem;
     padding: 4px;
     border: black solid 1px;
@@ -121,19 +123,38 @@ a:hover {
     transform: translateY(0);
 }
 
+/* Header section */
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #f6f3e9;
+    z-index: 100;
+    transition: background-color .4s;
+}
 
-/* Home menu*/
+.shadow-header {
+    box-shadow: 0 1px 16px hsla(0, 0%, 0%, .12);
+}
+
 .logo {
     padding-top: 1rem;
     font-size: 2rem;
     color: #232f61;
     font-weight: bold;
     padding-left: 1rem;
+    padding: 0.5rem 1rem;
 }
+
 
 .logo:hover {
     cursor: default;
 }
+
+
+/* General CSS styling */
+
 
 .container {
     max-width: 1120px;
@@ -149,19 +170,6 @@ a:hover {
     padding-block: 4rem 2rem;
 }
 
-/* img{
-    background-color: #fea485;
-} */
-
-.geometric-box {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: var(--first-color);
-    rotate: -30deg
-}
-
-
 /* Home page */
 
 .home_container {
@@ -173,32 +181,29 @@ a:hover {
     text-align: center;
 }
 
-.home_perfil {
+.home_content {
     position: relative;
     justify-self: center;
+    align-items: center;
+    margin-block: 2.5rem 4.5rem;
 }
-
-/* .home_img{
-    width: 220px;
-} */
 
 .home_img {
     position: relative;
     z-index: 10;
 }
 
-.geometric-box {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: var(--first-color);
-    rotate: -30deg;
+.home_image {
+    position: relative;
+    justify-self: center;
+    /* margin-block: 2.5rem 4.5rem; */
 }
 
 .description {
     text-align: center;
     color: #232f61;
     margin-bottom: 1.5rem;
+    margin-top: 2rem;
 }
 
 .description b {
@@ -207,4 +212,96 @@ a:hover {
             hsla(14, 98%, 50%, 0));
 }
 
-/* icon */
+/* About page */
+.about_section {
+    background-color: #EAE6D9;
+    transition: background-color 0.4s;
+}
+
+.section_title-1 {
+    text-align: center;
+    font-size: 2rem;
+    top: 1rem;
+    margin-top: -4rem;
+}
+
+.about_container {
+    row-gap: 0;
+}
+
+.about_content {
+    position: relative;
+    justify-self: center;
+    margin-block: 2.5rem 4.5rem;
+}
+
+.about_image {
+    width: 220px;
+}
+
+.about_img {
+    position: relative;
+}
+
+.about_info {
+    padding-left: 1.25rem;
+}
+
+.about_description {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+/* about button  */
+.about_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.button,
+.button_ghost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .5rem;
+}
+
+.button {
+    background-color: black;
+    padding: 0.7rem 1.5rem;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    transition: background-color .4s;
+
+}
+
+.button i {
+    font-size: 1.25rem;
+    color: white;
+}
+
+.button:hover {
+    color: white;
+    background-color: #fea485;
+    text-decoration: none;
+}
+
+.button_ghost {
+    border: 3px solid black;
+    color: black;
+    padding: .5rem;
+    transition: border .4s, color .4s;
+}
+
+.button_ghost i {
+    font-size: 1.25rem;
+    color: black
+}
+
+.button_ghost:hover {
+    border: 3px solid #fea485;
+    text-decoration: none;
+}

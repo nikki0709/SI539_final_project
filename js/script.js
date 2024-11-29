@@ -1,3 +1,4 @@
+// Hamburger menu
 const menu = document.querySelector(".menu");
 const menuItems = document.querySelectorAll(".menuItem");
 const hamburger = document.querySelector(".hamburger");
@@ -23,3 +24,13 @@ menuItems.forEach(
         menuItem.addEventListener("click", toggleMenu);
     }
 )
+
+// Add shadow to the header
+const shadowHeader = () =>{
+    const header = document.getElementById('header')
+    // When the scroll is greater than 50 viewport height, add the shadow-header class to the header tag
+    this.scrollY >= 50 ? header.classList.add('shadow-header') 
+                       : header.classList.remove('shadow-header')
+ }
+ window.addEventListener('scroll', shadowHeader)
+ 
