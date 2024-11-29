@@ -182,7 +182,6 @@ a:hover {
 .home_content {
     position: relative;
     justify-self: center;
-    align-items: center;
     margin-block: 2.5rem 4.5rem;
 }
 
@@ -195,7 +194,7 @@ a:hover {
     position: relative;
     justify-self: center;
     /* margin-block: 2.5rem 4.5rem; */
-    /* width: 220px; */
+    width: 220px;
 }
 
 .description {
