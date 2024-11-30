@@ -80,7 +80,7 @@ a:hover {
     font-size: 1.8rem;
     color: white;
     text-decoration: none;
-    z-index: 100;
+    /* z-index: 100; */
 }
 
 .menuItem:hover {
@@ -169,7 +169,6 @@ a:hover {
 }
 
 /* Home page */
-
 .home_container {
     padding-top: 2rem;
 }
@@ -191,10 +190,10 @@ a:hover {
 }
 
 .home_image {
-    /* position: relative; */
+    position: relative;
     justify-self: center;
     /* margin-block: 2.5rem 4.5rem; */
-    /* width: 220px; */
+    width: 220px;
 }
 
 .description {
@@ -208,6 +207,58 @@ a:hover {
     background: linear-gradient(90deg,
             hsla(14, 98%, 50%, .3),
             hsla(14, 98%, 50%, 0));
+}
+
+
+/* all button  */
+.button,
+.button_ghost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .5rem;
+}
+
+.button {
+    background-color: black;
+    padding: 0.7rem 1.5rem;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    transition: background-color .4s;
+
+}
+
+.button i {
+    font-size: 1.25rem;
+    color: white;
+}
+
+.button i:hover {
+    color: black;
+}
+
+.button:hover {
+    color: white;
+    background-color: #CC4E00;
+    text-decoration: none;
+}
+
+.button_ghost {
+    border: 3px solid black;
+    color: black;
+    padding: .5rem;
+    transition: border .4s, color .4s;
+}
+
+.button_ghost i {
+    font-size: 1.25rem;
+    color: black
+}
+
+.button_ghost:hover {
+    border: 3px solid #CC4E00;
+    text-decoration: none;
 }
 
 /* About page */
@@ -250,7 +301,6 @@ a:hover {
     margin-bottom: 1.5rem;
 }
 
-/* about button  */
 .about_buttons {
     display: flex;
     justify-content: center;
@@ -258,48 +308,135 @@ a:hover {
     column-gap: 1rem;
 }
 
-.button,
-.button_ghost {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: .5rem;
+
+/* Pets page */
+.pets_container {
+    row-gap: 2rem;
+    margin-top: 1rem;
 }
 
-.button {
+.pets_card {
+    padding: 1rem 1rem 2rem;
+    background-color: white;
+}
+
+.pets_image {
+    position: relative;
+    margin-bottom: 0.75rem;
+}
+
+.pets_content {
+    margin-bottom: 1.25rem;
+}
+
+.pets_subtitle {
+    position: relative;
+    display: inline-block;
+    color: #232f61;
+    padding-left: 1.75rem;
+}
+
+.pets_title {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.pets_subtitle::after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background-color: #232f61;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.doggie {
+    transform: scaleY(1);
+    position: relative;
+    justify-self: center;
+    width: 18rem;
+    top: -2rem;
+}
+
+#title{
+    margin-top: -2rem;
+}
+
+/* Contact section */
+.contact_mail{
+    position: relative;
     background-color: black;
-    padding: 0.7rem 1.5rem;
+    padding: 5rem 1.5rem 2.5rem;
+    margin-top: -2.5rem;
+}
+
+.contact_title{
+    color:white;
+    font-size: 2rem;
+    margin-bottom: 2rem;
     text-align: center;
-    color: white;
+}
+
+.contact_form, .contact_group{
+    display:grid;
+    row-gap: 1.25rem;
+}
+
+.contact_form{
+    position:relative;
+}
+
+.contact_box{
+    position: relative;
+    width: 100%;
+    height: 58px;
+}
+
+.contact_input{
+    font-family: "Sour Gummy", sans-serif;
+    outline: none;
+    border: none;
+}
+
+.contact_input{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-color: black;
+    border: 3px solid #aaa;
+    color:white;
+    padding:0.5rem 1rem;
     font-weight: 500;
-    transition: background-color .4s;
+    transition: border .4s; background-color: .4s;
+}
+
+.contact_form .contact_area{
+    height: 10rem;
+}
+
+.contact_input::placeholder{
+    color: #ccc;
+    transition: opacity .4s;
+}
+
+.contact_input:focus{
+    border: 3px solid white;
 
 }
 
-.button i {
-    font-size: 1.25rem;
-    color: white;
+.contact_input:-webkit-autofill{
+    transition: background-color 6000s, color 6000s;
 }
 
-.button:hover {
-    color: white;
-    background-color: #fea485;
-    text-decoration: none;
-}
-
-.button_ghost {
-    border: 3px solid black;
-    color: black;
-    padding: .5rem;
-    transition: border .4s, color .4s;
-}
-
-.button_ghost i {
-    font-size: 1.25rem;
-    color: black
-}
-
-.button_ghost:hover {
-    border: 3px solid #fea485;
-    text-decoration: none;
+.contact_label{
+    position:absolute;
+    top: -19px;
+    left: 10px;
+    color: #CC4E00;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: black;
+    padding: 8px;
+    pointer-events: none;
 }
