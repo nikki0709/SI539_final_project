@@ -25,8 +25,6 @@ menuItems.forEach(
     }
 )
 
-
-
 // Add shadow to the header
 const shadowHeader = () =>{
     const header = document.getElementById('header')
