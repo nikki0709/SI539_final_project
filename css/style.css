@@ -63,10 +63,9 @@ a {
 }
 
 a:hover {
-    color: #fea485;
+    color: rgba(255, 140, 66, 1);
     text-decoration: underline;
     text-underline-offset: 1rem;
-    /* text-decoration-color: pink; */
 }
 
 /* -------------------
@@ -86,6 +85,7 @@ a:hover {
 .menuItem:hover {
     text-decoration: underline;
 }
+
 
 .hamburger {
     position: fixed;
@@ -168,6 +168,10 @@ a:hover {
     padding-block: 4rem 2rem;
 }
 
+#contact{
+    padding-block: 4rem 0;
+}
+
 /* Home page */
 .home_container {
     padding-top: 2rem;
@@ -193,17 +197,17 @@ a:hover {
     position: relative;
     justify-self: center;
     /* margin-block: 2.5rem 4.5rem; */
-    width: 220px;
+    width: 70%;
 }
 
-.description {
+.home_description {
     text-align: center;
     color: #232f61;
     margin-bottom: 1.5rem;
     margin-top: 2rem;
 }
 
-.description b {
+.home_description b {
     background: linear-gradient(90deg,
             hsla(14, 98%, 50%, .3),
             hsla(14, 98%, 50%, 0));
@@ -235,7 +239,7 @@ a:hover {
 }
 
 .button i:hover {
-    color: black;
+    color: white;
 }
 
 .button:hover {
@@ -351,6 +355,11 @@ a:hover {
     left: 0;
 }
 
+.dog_image{
+    display: grid;
+    place-items: center;
+}
+
 .doggie {
     transform: scaleY(1);
     position: relative;
@@ -370,6 +379,7 @@ a:hover {
     padding: 5rem 1.5rem 2.5rem;
     margin-top: -2.5rem;
 }
+
 
 .contact_title{
     color:white;
@@ -406,7 +416,7 @@ a:hover {
     background-color: black;
     border: 3px solid #aaa;
     color:white;
-    padding:0.5rem 1rem;
+    padding:1rem 1rem;
     font-weight: 500;
     transition: border .4s; background-color: .4s;
 }
@@ -420,9 +430,10 @@ a:hover {
     transition: opacity .4s;
 }
 
+
+
 .contact_input:focus{
     border: 3px solid white;
-
 }
 
 .contact_input:-webkit-autofill{
@@ -433,10 +444,33 @@ a:hover {
     position:absolute;
     top: -19px;
     left: 10px;
-    color: #CC4E00;
+    color: rgba(255, 140, 66, 1);
     font-size: 1rem;
     font-weight: 500;
     background-color: black;
     padding: 8px;
     pointer-events: none;
+}
+
+.contact_button{
+    background-color: #CC4E00;
+    cursor:pointer;
+}
+
+.contact_input:focus::placeholder{
+    opacity: 0;
+}
+
+.footer{
+    background-color: black;
+}
+
+.footer_container {
+    padding-block: 1rem 1rem;
+  }
+
+.footer_copy{
+    color:white;
+    font-size: 1rem;
+    text-align: center;
 }
