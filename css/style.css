@@ -96,6 +96,7 @@ a:hover {
     border: black solid 1px;
     background: white;
     cursor: pointer;
+    color: black;
 }
 
 .closeIcon {
@@ -192,7 +193,7 @@ a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 60%;
 }
 
 .home_img {
@@ -342,7 +343,7 @@ a:hover {
 
 .pets_title {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .pets_subtitle::after {
