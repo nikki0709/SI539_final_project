@@ -18,7 +18,7 @@
         <div class="logo">Nikki's Portfolio</div>
         <nav>
             <ul class="menu">
-                <li><a class="menuItem" href="#home" id="nav_link">Hello from Nikki</a></li>
+                <li><a class="menuItem" href="#home">Hello from Nikki</a></li>
                 <li><a class="menuItem" href="#about">About Me</a></li>
                 <li><a class="menuItem" href="#pets">My pet friends</a></li>
                 <li><a class="menuItem" href="#contact">Contact</a></li>
@@ -41,7 +41,6 @@
                             alt="Illustration of a smiling person with glasses and long black hair on a green background"
                             class="home_img">
                     </div>
-
                 </div>
                 <h1 class="home_name">
                     - Hi, I'm Nikki -
@@ -65,11 +64,11 @@
                             class="about_img">
                     </div>
                 </div>
-                <h2 class="section_title-1">
-                    - About Me -
-                </h2>
 
                 <div class="about_info">
+                    <h2 class="section_title-1">
+                        - About Me -
+                    </h2>
                     <p class="about_description">
                         I'm a first year <b>MSI student</b> focusing on <b>data track</b>. I earned my Bachelor's degree
                         in Psychology from the University of Washington. During my undergraduate years, I developed a
@@ -99,7 +98,6 @@
                         </a>
                     </div>
                 </div>
-                <br>
                 <br>
             </div>
         </section>
@@ -195,12 +193,21 @@
                                 <label for="email" class="contact_label">Email Address</label>
                             </div>
 
+                            <!-- Phone Number Field -->
+                            <div class="contact_box">
+                                <input type="tel" name="user_phone" class="contact_input" id="phone" required
+                                    placeholder="e.g., +1 234-567-8900" autocomplete="tel">
+                                <label for="phone" class="contact_label">Phone Number</label>
+                            </div>
+
                             <!-- Message Field -->
                             <div class="contact_box contact_area">
                                 <textarea name="user_message" class="contact_input" id="message" rows="2" required
                                     placeholder="Write your message here..." autocomplete="off"></textarea>
                                 <label for="message" class="contact_label">Your Message</label>
                             </div>
+
+
                         </div>
                         <button type="submit" class="contact_button button">
                             <i class="ri-send-plane-line"></i> Send Message
