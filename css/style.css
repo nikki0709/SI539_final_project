@@ -678,9 +678,8 @@ a:hover {
     /* .menuItem.active {
         color: #cc4e00;
         font-weight: bold;
-        /* text-decoration: underline; */
-        /* text-underline-offset: 3px; */
-
+        text-decoration: underline;
+        text-underline-offset: 3px;
     }
 
     .menuItem.active:hover {
