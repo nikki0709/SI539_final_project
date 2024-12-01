@@ -17,6 +17,19 @@ function toggleMenu() {
     }
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth >= 1150) {
+        // Remove mobile menu settings for larger screens
+        menu.classList.remove("showMenu");
+        closeIcon.style.display = "none";
+        menuIcon.style.display = "none";
+    }
+
+    menu.classList.remove("showMenu");
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+});
+
 hamburger.addEventListener("click", toggleMenu);
 
 menuItems.forEach(
@@ -24,6 +37,17 @@ menuItems.forEach(
         menuItem.addEventListener("click", toggleMenu);
     }
 )
+
+
+// // Dynamically Update Active State
+// const menuItem = document.querySelectorAll(".menuItem");
+
+// menuItems.forEach(item => {
+//     item.addEventListener("click", () => {
+//         menuItems.forEach(link => link.classList.remove("active")); // Remove active class from all
+//         item.classList.add("active"); // Add active class to clicked link
+//     });
+// });
 
 // Add shadow to the header
 const shadowHeader = () =>{
@@ -33,4 +57,3 @@ const shadowHeader = () =>{
                        : header.classList.remove('shadow-header')
  }
  window.addEventListener('scroll', shadowHeader)
- 
