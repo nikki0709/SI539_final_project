@@ -25,7 +25,7 @@ h2,
 h3
 {
     color: hsl(0, 0%, 0%);
-    font-weight: bold 300;
+    font-weight: 300;
 }
 
 ul {
@@ -283,7 +283,7 @@ a:hover {
     text-align: center;
     font-size: 2rem;
     top: 1rem;
-    margin-top: -4rem;
+    margin-top: -5rem;
 }
 
 .about_container {
@@ -311,6 +311,7 @@ a:hover {
 .about_description {
     position: relative;
     margin-bottom: 1.5rem;
+    margin-top: 1rem;
 }
 
 .about_buttons {
